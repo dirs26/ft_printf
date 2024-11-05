@@ -4,7 +4,8 @@ SRC = ft_printf_putchar\
 						ft_printf_putnbr\
 						ft_printf_puthex\
 						ft_printf_putunbr\
-						ft_printf_putptr
+						ft_printf_putptr\
+						ft_printf
 
 OBJECTS = $(SOURCES:.c=.o) 
 
