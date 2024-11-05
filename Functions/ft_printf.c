@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libftprintf.h"
+#include <stdarg.h>
 
 int	ft_print_str(va_list args, const char enter_str)
 {

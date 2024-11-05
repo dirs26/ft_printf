@@ -11,11 +11,11 @@
 /* ************************************************************************** */
 
 #ifdef libftprintf_h
-# define libftprintf_h
+#define libftprintf_h
 
-# include <stdarg.h>
-# include <stdlib.h>
-# include <unistd.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <unistd.h>
 
 int	ft_putbnr(int n);
 int	ft_putunbr(unsigned int n);
