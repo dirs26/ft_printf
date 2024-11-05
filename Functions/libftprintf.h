@@ -22,5 +22,6 @@ int	ft_putunbr(unsigned int n);
 int	ft_putchar(char c);
 int	ft_puthex(unsigned long int n, char format);
 int	ft_putptr(void *ptr);
+int	ft_printf(char const *enter_str, ...);
 
 #endif
