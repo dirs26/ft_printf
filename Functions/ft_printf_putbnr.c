@@ -12,7 +12,7 @@
 
 #include "libftprintf.h"
 
-int ft_putbnr(int n)
+int	ft_putbnr(int n)
 {
 	int			len;
 	char	num;
