@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifdef libftprintf_h
-#define libftprintf_h
+#ifdef ft_printf_h
+#define ft_printf_h
 
 #include <stdarg.h>
 #include <stdlib.h>
