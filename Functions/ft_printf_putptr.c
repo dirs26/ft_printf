@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-int	ft_putptr(void *ptr)
+int	ft_printf_putptr(void *ptr)
 {
 	int	len;
 

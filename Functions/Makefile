@@ -1,18 +1,18 @@
 NAME = libftprintf.a
 
-SRC = ft_printf_putchar\
-						ft_printf_putnbr\
-						ft_printf_puthex\
-						ft_printf_putunbr\
-						ft_printf_putptr\
-						ft_printf
+SRC = ft_printf_putchar.c\
+						ft_printf_putnbr.c\
+						ft_printf_puthex.c\
+						ft_printf_putunbr.c\
+						ft_printf_putptr.c\
+						ft_printf.c
 
 OBJECTS = $(SOURCES:.c=.o) 
 
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
 INCLUDE = libftprintf.h
-RM = rm -rf
+RM = rm -f
 
 all: $(NAME)
 

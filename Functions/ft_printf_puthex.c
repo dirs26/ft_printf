@@ -12,18 +12,19 @@
 
 #include "ft_printf.h"
 
-int	ft_puthex(unsigned long int n, char format)
+int	ft_printf_puthex(unsigned long n, char format)
 {
-	int		len = 0;
+	int		len;
 	char	*b;
 
+	len = 0;
 	if (format == 'x')
 		b = "0123456789abcdef";
 	else
 		b = "0123456789ABCDEF";
 
 	if (n >= 16)
-		len += ft_puthex(n / 16, format);
-	len += ft_putchar(b[n % 16]);
+		len += ft_printf_puthex(n / 16, format);
+	len += ft_printf_putchar(b[n % 16]);
 	return (len);
 }

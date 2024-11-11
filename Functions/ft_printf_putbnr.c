@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-int	ft_putbnr(int n)
+int	ft_printf_putbnr(int n)
 {
 	int			len;
 	char	num;
@@ -22,12 +22,12 @@ int	ft_putbnr(int n)
 		return (ft_putstr("-2147483648"));
 	if (n < 0)
 	{
-		len += ft_putchar('-');
+		len += ft_printf_putchar('-');
 		n = -n;
 	}
 	if (n >= 10)
-		len += ft_putnbr(n / 10);
+		len += ft_printf_putnbr(n / 10);
 	num = n % 10 + '0';
-	len += ft_putchar(num);
+	len += ft_printf_putchar(num);
 	return (len);
 }

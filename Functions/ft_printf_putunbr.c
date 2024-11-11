@@ -19,8 +19,8 @@ int	ft_putunbr(unsigned int n)
 
 	len = 0;
 	if (n >= 10)
-		len += ft_putunbr(n / 10);
+		len += ft_printf_putunbr(n / 10);
 	num = n % 10 + '0';
-	len += ft_putchar(num);
+	len += ft_printf_putchar(num);
 	return (len);
 }
