@@ -12,7 +12,7 @@ OBJECTS = $(SOURCES:.c=.o)
 
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
-INCLUDE = printf.h
+INCLUDE = ft_printf.h
 RM = rm -f
 
 all: $(NAME)
