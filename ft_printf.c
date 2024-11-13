@@ -29,7 +29,7 @@ static int	 ft_print_str(va_list args, const char print_str)
 	else if (print_str == 'x' || print_str == 'X')
 		len += ft_puthex(va_arg(args, unsigned int), print_str);
 	else if (print_str == 'p')
-		len += ft_putptr(va_arg(args, void * ));
+		len += ft_putptr(va_arg(args, unsigned long * ));
 	else if (print_str == '%')
 		len += ft_putchar('%');
 	return (len);
