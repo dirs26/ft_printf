@@ -18,8 +18,8 @@ int	ft_printf_putptr(void *ptr)
 
 	len = 0;
 	if(!ptr)
-		return (ft_putstr("(NIL)"));
-	len += ft_putstr("0x");
-	len += ft_putstr((unsigned long)ptr, 'x');
+		return (ft_printf_putstr("(nil)"));
+	len += ft_printf_putstr("0x");
+	len += ft_printf_putstr((unsigned long)ptr, 'x');
 	return (len);
 }

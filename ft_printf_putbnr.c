@@ -19,7 +19,7 @@ int	ft_printf_putbnr(int n)
 
 	len = 0;
 	if (n == -2147483648)
-		return (ft_putstr("-2147483648"));
+		return (ft_printf_putstr("-2147483648"));
 	if (n < 0)
 	{
 		len += ft_printf_putchar('-');
