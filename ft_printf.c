@@ -13,7 +13,7 @@
 #include "ft_printf.h"
 #include <stdarg.h>
 
-int	ft_print_str(va_list args, const char print_str)
+static int	 ft_print_str(va_list args, const char print_str)
 {
 	int		len;
 
