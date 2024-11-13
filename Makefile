@@ -1,11 +1,11 @@
 NAME = libftprintf.a
 
-SRC = ft_printf_putchar.c\
-						ft_printf_putnbr.c\
-						ft_printf_puthex.c\
-						ft_printf_putunbr.c\
-						ft_printf_putptr.c\
-						ft_printf_putstr.c\
+SRC = ft_putchar.c\
+						ft_putnbr.c\
+						ft_puthex.c\
+						ft_putunbr.c\
+						ft_putptr.c\
+						ft_putstr.c\
 						ft_printf.c
 
 OBJECTS = $(SOURCES:.c=.o) 
