@@ -1,18 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf_putchar.c                                :+:      :+:    :+:   */
+/*   ft_printf_putstr.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: diegrod2 <diegrod2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/31 16:55:05 by diegrod2          #+#    #+#             */
-/*   Updated: 2024/11/01 13:06:59 by diegrod2         ###   ########.fr       */
+/*   Created: 2024/11/12 16:07:37 by diegrod2          #+#    #+#             */
+/*   Updated: 2024/11/12 16:07:37 by diegrod2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_printf_putchar(char c)
+int	ft_putstr(char *str)
 {
-	return (write(1, &c, 1));
-}	
+	int	len;
+
+	len = 0;
+	if (!str)
+		str = "(null)";
+	while (str[len])
+	{
+		write(1, &str[len], 1);
+		len++;
+	}
+	return (len);
+}

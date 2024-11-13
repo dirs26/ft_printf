@@ -1,26 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf_putunbr.c                                :+:      :+:    :+:   */
+/*   ft_printf_putchar.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: diegrod2 <diegrod2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/31 17:01:07 by diegrod2          #+#    #+#             */
-/*   Updated: 2024/10/31 17:01:07 by diegrod2         ###   ########.fr       */
+/*   Created: 2024/10/31 16:55:05 by diegrod2          #+#    #+#             */
+/*   Updated: 2024/11/01 13:06:59 by diegrod2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_printf_putunbr(unsigned int n)
+int	ft_putchar(char c)
 {
-	int		len;
-	char	num;
-
-	len = 0;
-	if (n >= 10)
-		len += ft_printf_putunbr(n / 10);
-	num = n % 10 + '0';
-	len += ft_printf_putchar(num);
-	return (len);
-}
+	return (write(1, &c, 1));
+}	

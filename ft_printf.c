@@ -19,19 +19,19 @@ int	ft_print_str(va_list args, const char print_str)
 
 	len = 0;
 	if (print_str == 'c')
-		len += ft_printf_putchar(va_arg(args, int));
+		len += ft_putchar(va_arg(args, int));
 	else if (print_str == 's')
-		len += ft_printf_putstr(va_arg(args, char *));
+		len += ft_putstr(va_arg(args, char *));
 	else if (print_str == 'd' || print_str == 'i')
-		len += ft_printf_putnbr(va_arg(args, int));
+		len += ft_putnbr(va_arg(args, int));
 	else if (print_str == 'u')
-		len += ft_printf_putunbr(va_arg(args, unsigned int));
+		len += ft_putunbr(va_arg(args, unsigned int));
 	else if (print_str == 'x' || print_str == 'X')
-		len += ft_printf_puthex(va_arg(args, unsigned int), print_str);
+		len += ft_puthex(va_arg(args, unsigned int), print_str);
 	else if (print_str == 'p')
-		len += ft_printf_putptr(va_arg(args, void * ));
+		len += ft_putptr(va_arg(args, void * ));
 	else if (print_str == '%')
-		len += ft_printf_putchar('%');
+		len += ft_putchar('%');
 	return (len);
 }
 
@@ -52,7 +52,7 @@ int	ft_printf(char const *print_str, ...)
 			i++;
 		}
 		else
-			len += ft_printf_putchar(print_str[i]);
+			len += ft_putchar(print_str[i]);
 		i++;
 	}
 	va_end(args);

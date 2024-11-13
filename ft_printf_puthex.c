@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf_puthex.c                                 :+:      :+:    :+:   */
+/*   ft_puthex.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: diegrod2 <diegrod2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-int	ft_printf_puthex(unsigned long n, char format)
+int	ft_puthex(unsigned long n, char format)
 {
 	int		len;
 	char	*b;
@@ -24,7 +24,7 @@ int	ft_printf_puthex(unsigned long n, char format)
 		b = "0123456789ABCDEF";
 
 	if (n >= 16)
-		len += ft_printf_puthex(n / 16, format);
-	len += ft_printf_putchar(b[n % 16]);
+		len += ft_puthex(n / 16, format);
+	len += ft_putchar(b[n % 16]);
 	return (len);
 }
