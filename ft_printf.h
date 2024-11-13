@@ -23,6 +23,6 @@ int ft_printf_putstr(char *str);
 int	ft_printf_putchar(char c);
 int	ft_printf_puthex(unsigned long int n, char format);
 int	ft_printf_putptr(void *ptr);
-int	ft_printf(char const *print_str, ...);
+int	ft_printf(char const *print_str, ...)
 
 #endif
