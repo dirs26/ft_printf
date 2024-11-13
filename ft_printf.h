@@ -18,7 +18,7 @@
 #include <unistd.h>
 
 int	ft_printf(char const *format, ...);
-int	ft_putbnr(int n);
+int	ft_putnbr(int n);
 int	ft_putunbr(unsigned int n);
 int ft_putstr(char *str);
 int	ft_putchar(char c);
