@@ -22,7 +22,6 @@ int	ft_puthex(unsigned int n, char format)
 		b = "0123456789abcdef";
 	else
 		b = "0123456789ABCDEF";
-
 	if (n >= 16)
 		len += ft_puthex(n / 16, format);
 	len += ft_putchar(b[n % 16]);
