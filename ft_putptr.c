@@ -23,4 +23,3 @@ int	ft_putptr(void *ptr)
 	len += ft_puthex((unsigned long long)ptr, 'x');
 	return (len);
 }
-
