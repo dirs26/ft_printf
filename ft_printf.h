@@ -20,7 +20,7 @@
 int	ft_printf(char const *format, ...);
 int	ft_putnbr(int n);
 int	ft_putunbr(unsigned int n);
-int ft_putstr(char *str);
+int	ft_putstr(char *str);
 int	ft_putchar(char c);
 int	ft_puthex(unsigned int n, char format);
 int	ft_putptr(void *ptr);

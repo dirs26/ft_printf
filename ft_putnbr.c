@@ -14,7 +14,7 @@
 
 int	ft_putnbr(int n)
 {
-	int			len;
+	int		len;
 	char	num;
 
 	len = 0;
