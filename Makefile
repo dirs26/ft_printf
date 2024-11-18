@@ -4,7 +4,7 @@ SOURCES = ft_putchar.c ft_putnbr.c ft_puthex.c ft_putunbr.c ft_putptr.c ft_putst
 OBJECTS = $(SOURCES:.c=.o) 
 
 CC = cc
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -gdwarf-4
 INCLUDE = ft_printf.h
 RM = rm -f
 
