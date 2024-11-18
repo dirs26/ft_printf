@@ -1,6 +1,6 @@
 NAME = libftprintf.a
 
-SRC = ft_putchar.c ft_putnbr.c ft_puthex.c ft_putunbr.c ft_putptr.c ft_putstr.c ft_printf.c
+SOURCES = ft_putchar.c ft_putnbr.c ft_puthex.c ft_putunbr.c ft_putptr.c ft_putstr.c ft_printf.c
 OBJECTS = $(SOURCES:.c=.o) 
 
 CC = cc
