@@ -24,4 +24,3 @@ int	ft_putptr(void *ptr)
 	return (len);
 }
 
-static int voidhex
