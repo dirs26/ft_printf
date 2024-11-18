@@ -22,7 +22,7 @@ int	ft_putnbr(int n);
 int	ft_putunbr(unsigned int n);
 int	ft_putstr(char *str);
 int	ft_putchar(char c);
-int	ft_puthex(unsigned long n, char format);
+int	ft_puthex(unsigned long long n, char format);
 int	ft_putptr(void *ptr);
 
 #endif
